@@ -104,41 +104,95 @@
 
 /*--------------CRUD 함수화--------------*/
 //Create
-var todos = ['운동'];
-var todo = '게임';
+// var todos = ['운동'];
+// var todo = '게임';
 
-function create(todo){
-    todos.push(todo);
-    console.log(todos)
+// function create(todo){
+//     todos.push(todo);
+//     console.log(todos)
+// }
+
+// create();
+
+// //Read
+// function read(todos, todo){
+//     todos.forEach(function(todo){
+//          console.log(todo);
+//     })
+// }
+
+// read(todos, todo);
+// //update
+
+// function update(todos, updateTodo){
+//     var updateIndex = todos.findIndex(function(todo){
+//         return todo === updateTodo
+//     });
+//     console.log(updateIndex);
+// }
+
+// update(todos, todo);
+// //delete
+// function delete1(todos, deleteTodo){
+//     var deleteIndex = todos.findIndex(function(todo) {
+//         return todo === deleteTodo;
+//       });
+//       todos.splice(deleteIndex, 1);
+//       console.log(todos); 
+// }
+
+// delete1(todos, todo);
+
+
+//코드 연습중
+// function avg(count){
+//     var count = [10,20,30,40,50,60,70,100];
+//     var sum = 0;
+
+//     for(var i = 0; i < count.length; i++){
+//         sum += count[i];
+//     }
+//     return sum / count.length;
+// }
+// //avg(count);
+// console.log(count);
+
+// var count = [10,20,30,40,50,60,70,100];
+// var sum = 0;
+
+// for(var i = 0; i < count.length; i++){
+//     // if(sum += count[i]){
+//     //     sum / count.length;
+//     // }
+//     sum += count[i];
+// }
+
+// console.log(sum / count.length);
+
+// for(var i = 1; i <=9; i++){
+//     for(var j = 1; j <= 9; j++){
+//         console.log(i + '*', + j + '=', + (i*j));
+//     }
+// }
+
+// function gugudan(){
+//     for(var i = 1; i <=9; i++){
+//         for(var j = 1; j <= 9; j++){
+//             console.log(i + '*', + j + '=', + (i*j));
+//         }
+//     }
+// }
+// gugudan();
+
+var input = Number(prompt('숫자를 입력해주세요.'));
+var input2 = Number(prompt('두 번째 숫자를 입력하세요.'));
+var sum = 0;
+
+function prom(){
+    for(var i = input; i < input2; i++){
+        sum = input + input2;
+    }
+    return sum;
 }
-
-create();
-
-//Read
-function read(todos, todo){
-    todos.forEach(function(todo){
-         console.log(todo);
-    })
-}
-
-read(todos, todo);
-//update
-
-function update(todos, updateTodo){
-    var updateIndex = todos.findIndex(function(todo){
-        return todo === updateTodo
-    });
-    console.log(updateIndex);
-}
-
-update(todos, todo);
-//delete
-function delete1(todos, deleteTodo){
-    var deleteIndex = todos.findIndex(function(todo) {
-        return todo === deleteTodo;
-      });
-      todos.splice(deleteIndex, 1);
-      console.log(todos); 
-}
-
-delete1(todos, todo);
+// prom();
+alert(prom());
